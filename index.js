@@ -13,3 +13,6 @@ MONGOOSE.set("strictQuery", false);
 MONGOOSE.connect(process.env.DATABASE_CONNECTION_STRING)
   .then(() => console.log("successful conection"))
   .catch((err) => console.log(err));
+ 
+ 
+ROUTES_APP(APP);
