@@ -41,3 +41,11 @@ const updateEventUAM = ((req, res) => {
         .then((data) => res.json(data))
         .catch((err) => res.json({message : err}))
 })
+
+module.exports = {
+    getEventsUAM,
+    createEventUAM,
+    deleteEventUAM,
+    updateEventUAM
+}
+
