@@ -2,7 +2,7 @@ const EXPRESS = require("express")
 const MONGOOSE = require("mongoose");
 const APP = EXPRESS();
 require("dotenv").config();
-
+APP.use(EXPRESS.json());
 
 APP.listen(process.env.CONNECTION_PORT,() => {
     console.log(`Listening port ${process.env.CONNECTION_PORT}`)
