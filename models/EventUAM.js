@@ -9,9 +9,9 @@ const EVENTUAM_SCHEMA = MONGOOSE.Schema({
     category : {type : String,require: true},
     status : {type : String, require : true},
     image_url : {type : String, require : true},
-    created_at : {type:Date, require : true, default : Date.now()},
-    updated_at : {type:Date, require : true, default : Date.now()},
-    eliminated_at : {type:Date, require : true, default : Date.now()},
+    created_at : {type:Date, default : Date.now()},
+    updated_at : {type:Date, default : Date.now()},
+    eliminated_at : {type:Date, default : Date.now()},
 
 });
 
