@@ -9,9 +9,9 @@ const {
 const WEBMINAR_ROUTER = EXPRESS.Router()
 
 WEBMINAR_ROUTER.get("/",getWebminarUAM);
-WEBMINAR_ROUTER.post("/webminar",getWebminarbyId);
-WEBMINAR_ROUTER.get("/:id",createWebminar)
-WEBMINAR_ROUTER.put("/:id",deleteWebminar);
-WEBMINAR_ROUTER.delete("/:id",updateWebminar);
+WEBMINAR_ROUTER.post("/webminar",createWebminar);
+WEBMINAR_ROUTER.get("/:id",getWebminarbyId)
+WEBMINAR_ROUTER.put("/:id",updateWebminar);
+WEBMINAR_ROUTER.delete("/:id",deleteWebminar);
 
 module.exports = WEBMINAR_ROUTER;

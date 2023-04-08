@@ -13,8 +13,8 @@ const getWebminarbyId = ((req, res) => {
 })
 
 const createWebminar = ((req, res) => {
-    const NEW_EVENT = EVENTUAM_SCHEMA(req.body);
-    WEBINAR_SCHEMA.save()
+    const NEW_WEBMINAR = WEBINAR_SCHEMA(req.body);
+    NEW_WEBMINAR.save()
         .then((data) => res.json(data))
         .catch((err) => res.json({ message: err }))
 })
